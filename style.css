@@ -1,0 +1,112 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #0d6efd;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Navbar brand (your name) */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-left: 60px;
+  color: white;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+/* Hover animation for name */
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.4s ease;
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #ffcc00;
+}
+
+/* Navbar links (About, Skills, etc.) */
+.navbar-nav .nav-link {
+  font-weight: 600;                 /* Bold text */
+  color: white !important;          /* Text color */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffcc00 !important;        /* Hover color */
+  transform: scale(1.05);
+}
+                                                                              
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #4d86db, #0361f0);
+  color: white;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  margin: 60px 0 30px;
+  color: #0a58ca;
+  font-weight: 600;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
